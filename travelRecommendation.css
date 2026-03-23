@@ -1,0 +1,44 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+body {
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://afar.brightspotcdn.com/dims4/default/5896a05/2147483647/strip/false/crop/3000x2247+0+0/resize/1486x1113!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 50px; background: rgba(0, 0, 0, 0.8);
+    position: fixed; width: 100%; top: 0; z-index: 1000;
+}
+.logo { display: flex; align-items: center; font-size: 24px; font-weight: bold; }
+.logo img { width: 30px; margin-right: 10px; border-radius: 50%; }
+.nav-links a { color: white; text-decoration: none; margin: 0 15px; cursor: pointer; }
+
+/* SPA Switching */
+.page-section { display: none; padding-top: 150px; min-height: 100vh; }
+.page-section.active { display: block; }
+
+/* Task 8: Grid Results */
+.results-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; padding: 40px 100px;
+}
+.result-card { background: white; color: black; border-radius: 10px; overflow: hidden; text-align: left; }
+.result-card img { width: 100%; height: 200px; object-fit: cover; }
+.result-card h3, .result-card p { padding: 10px 15px; }
+
+/* Sidebar */
+.social-sidebar { position: fixed; left: 20px; top: 40%; display: flex; flex-direction: column; gap: 20px; font-size: 22px; }
+.social-sidebar a { color: white; }
+
+/* Forms & UI */
+.content-wrapper { max-width: 800px; margin: 0 auto; background: rgba(0,0,0,0.6); padding: 40px; border-radius: 15px; }
+.team-grid { display: flex; justify-content: space-around; margin-top: 20px; }
+.book-now { background: #2d5a5c; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; }
+.search-container { display: flex; background: white; border-radius: 20px; padding: 5px 15px; align-items: center; }
+#searchInput { border: none; outline: none; color: black; padding: 5px; }
+#btnSearch { background: #4a8a8c; color: white; border: none; padding: 5px 15px; border-radius: 15px; margin-left: 5px; cursor: pointer; }
+#btnReset { background: #607d8b; color: white; border: none; padding: 5px 15px; border-radius: 15px; margin-left: 5px; cursor: pointer; }
